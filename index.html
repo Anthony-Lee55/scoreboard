@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scoreboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"
+    defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-info-subtle">
+  <!-- RESET BUTTON -->
+  <button onclick="reset()" class="btn btn-danger m-5" id="reset">RESET</button>
+  <main class="container">
+    <section class="row text-center justify-content-evenly">
+      <div class="col-3">
+        <h4>HOME</h4>
+      </div>
+      <div class="col-3">
+        <h4>AWAY</h4>
+      </div>
+      <div class="row text-center justify-content-evenly">
+        <div class="col-3 border border-primary">
+          <h1 class="p-5" id="homeScore">0</h1>
+        </div>
+        <div class="col-3 border border-primary">
+          <h1 class="p-5" id="awayScore">0</h1>
+        </div>
+      </div>
+    </section>
+    <!-- BUTTONS -->
+    <section class="row text-center">
+      <div class="">
+        <button onclick="home1()" class="btn btn-dark col-2 m-4" id="home1">HOME +1</button>
+        <button onclick="home3()" class="btn btn-dark col-2 m-4" id="home3">HOME +3</button>
+        <button onclick="away1()" class="btn btn-dark col-2 m-4" id="away1">AWAY +1</button>
+        <button onclick="away3()" class="btn btn-dark col-2 m-4" id="away3">AWAY +3</button>
+      </div>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+
+</html>
